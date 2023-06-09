@@ -1,0 +1,50 @@
+.circle {
+    transition: transform 0.3s ease;
+    animation: circleAnimation 4s ease;
+}
+
+@keyframes circleAnimation {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.paragraph:nth-child(2) .body {
+    max-height: 0;
+    animation: slideUpAnimation 1s ease forwards;
+}
+
+@keyframes slideUpAnimation {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 188px;
+    }
+}
+
+/* Add animation delay for each list item */
+.body ul li {
+    animation: listItemAnimation 1s ease forwards;
+}
+
+@keyframes listItemAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
