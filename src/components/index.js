@@ -1,9 +1,9 @@
-import Home from "./Home";
-import Info from "./Info"
-import Projects from "./Projects"
-import Welcome from "./Welcome"
-import SmoothScroll from "./SmoothScroll/SmoothScroll";
-import { pageAnimation, circleAnimation, enteringAnimation } from "./TransitionAnimation/TransitionAnimation";
+import Home from "./default-layout";
+import Info from "./default-layout/info";
+import Projects from "./default-layout/projects";
+import Welcome from "./default-layout/welcome";
+import SmoothScroll from "./smooth-scroll";
 
 
-export { Home, Info, Projects, Welcome, SmoothScroll }
+export { Home, Info, Projects, SmoothScroll, Welcome };
+

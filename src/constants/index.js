@@ -180,7 +180,7 @@ export const projectsContent =
   [
     {
       id: 1,
-      Name: "Koi Fish Store",
+      Name: "F4Koin",
       Year: "2022",
       Scope: "Course",
       Type: "Corporate",
@@ -198,9 +198,9 @@ export const projectsContent =
     },
     {
       id: 3,
-      Name: "N4T41",
+      Name: "N4T41's Portfolio",
       Year: "2023",
-      Scope: "Comission",
+      Scope: "Portfolio",
       Type: "Solo",
       Reference: "https://t41n4.github.io",
       Role: "Solo"
@@ -223,101 +223,6 @@ export const projectsContent =
       Reference: "https://eae.n4t41.id.vn",
       Role: "Backend"
     },
-    // {
-    //   id: 6,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 7,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 8,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 9,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 10,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 11,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-
-    // {
-    //   id: 12,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 13,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 14,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 15,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 16,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 17,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-    // {
-    //   id: 18,
-    //   Name: "RSA Transfer",
-    //   Year: "2022",
-    //   Scope: "Comission",
-    //   Type: "Solo",
-    // },
-
-
-
   ]
 
 

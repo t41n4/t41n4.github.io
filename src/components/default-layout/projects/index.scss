@@ -1,0 +1,18 @@
+.project-page {
+  @apply block opacity-[1];
+  .ctn {
+    @apply text-right px-[56px] py-[181px];
+  }
+  .project-list {
+    @apply flex items-end flex-col gap-y-[15px] mt-[50px];
+    .project-item {
+      @apply flex flex-col md:flex-row-reverse md:items-baseline gap-x-2 font-thin;
+      .name {
+        @apply text-4xl sm:text-6xl;
+      }
+      .description {
+        @apply text-base sm:text-lg;
+      }
+    }
+  }
+}
