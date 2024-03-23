@@ -1,14 +1,12 @@
 import { motion } from "framer-motion"
-import React from 'react'
+import React, { useState } from 'react'
 import { homeContent } from '../../constants'
 import { useUniqueKey } from '../hooks'
 import { pageAnimation } from "../transition-animation/TransitionAnimation"
 import './index.scss'
 
-function Home() {
-    // useEffect(() => {
-    //     document.querySelector('.fade').classList.add('fade-in')
-    // }, [])
+const Home = () => {
+    const [loading, setLoading] = useState(true)
 
     return (
         <motion.section
@@ -22,7 +20,16 @@ function Home() {
             <div className='flex flex-col space-y-2'>
                 <span className='invert dark:invert-0 pb-2'>
                     {
-                        < img src={homeContent[0]} alt="" className='rounded-[25%] border ' />
+                        < img src={homeContent[0]}
+                            className={"rounded-[25%] borde", loading ? 'hidden' : 'block'}
+                            alt="profile"
+                            onLoad={() => {
+                                setLoading(false)
+                            }}
+                        />
+                    }
+                    {
+                        loading && <div className='h-[200px] w-[200px] bg-gray-300 rounded-[25%] animate-pulse'></div>
                     }
                 </span>
                 {
@@ -33,11 +40,11 @@ function Home() {
                     ))
                 }
             </div>
-            
+
 
         </motion.section>
 
-        
+
     )
 }
 
