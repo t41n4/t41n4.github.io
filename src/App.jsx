@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { Route, Routes, useLocation } from "react-router-dom"
-import { Home, Info, Projects } from "./components"
-import NavBar from "./components/default-layout/nav-bar"
+import { Home, Info, Projects, Skill } from "./pages"
+import NavBar from "./components/nav-bar"
 import { useWindowSize } from "./components/hooks"
 import ThemeToggle from "./components/theme-toggle"
 import { circleAnimation } from "./components/transition-animation/TransitionAnimation"
@@ -30,7 +30,6 @@ const App = () => {
 
   return (
     <>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
       <link rel="icon" href="/public/T.svg" />
       <div id="page-body">
         <motion.div
@@ -72,7 +71,9 @@ const App = () => {
               <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route path="/info" element={<Info />} />
+                <Route path="/contact" element={<Info />} />
+                <Route path="/skill" element={<Skill />} />
+
               </Routes>
             </AnimatePresence>
           </div>

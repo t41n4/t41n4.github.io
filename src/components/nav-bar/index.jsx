@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { navLinks } from '../../../constants'
+import { links } from '../../data'
 import { useNavigate } from 'react-router';
 import { useLocation } from 'react-router-dom'
 
@@ -8,14 +8,14 @@ const NavBar = () => {
     const [Activate, setActivate] = useState('home')
     const navigate = useNavigate();
     useEffect(() => {
-        navLinks.forEach((item) => { if (currentLocation.pathname.includes(item.path)) setActivate(item.id) })
+        links.forEach((item) => { if (currentLocation.pathname.includes(item.path)) setActivate(item.id) })
     }, [])
 
     return (
         <div >
             <ol className='flex flex-col'>
                 {
-                    navLinks.map((item) =>
+                    links.map((item) =>
                     (<li key={item.id}>
                         <div className='_text cursor-pointer'
                             onClick={() => {

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "home",
+        "title": "About me",
+        "path": "/",
+        "isActive": true
+    },
+    {
+        "id": "projects",
+        "title": "Projects",
+        "path": "/projects",
+        "isActive": false
+    },
+    {
+        "id": "contact",
+        "title": "Contact",
+        "path": "/contact",
+        "isActive": false
+    },
+    {
+        "id": "skill",
+        "title": "Skill",
+        "path": "/skill",
+        "isActive": false
+    }
+]

@@ -1,36 +1,36 @@
 import { motion } from 'framer-motion';
 import React from 'react'
-import { enteringAnimation } from '../../transition-animation/TransitionAnimation';
+// import { enteringAnimation } from '../../components/transition-animation/TransitionAnimation';
 
 function Welcome() {
 
-    const textContainer = {
-        initial: {
-            opacity: 1,
-        },
-        animate: {
-            opacity: 0,
-            transition: {
-                duration: 0.25,
-                when: "afterChildren",
-            },
-        },
-    };
+    // const textContainer = {
+    //     initial: {
+    //         opacity: 1,
+    //     },
+    //     animate: {
+    //         opacity: 0,
+    //         transition: {
+    //             duration: 0.25,
+    //             when: "afterChildren",
+    //         },
+    //     },
+    // };
 
-    const text = {
-        initial: {
-            opacity: 1
-        },
-        animate: {
-            opacity: 0
-        },
-    };
+    // const text = {
+    //     initial: {
+    //         opacity: 1
+    //     },
+    //     animate: {
+    //         opacity: 0
+    //     },
+    // };
 
     const InitialTransition = () => {
         return (
             
             <div className="absolute inset-0 flex items-center justify-center">
-                <motion.div
+                {/* <motion.div
                     initial="initial"
                     animate="animate"
                     variants={enteringAnimation}
@@ -40,7 +40,7 @@ function Welcome() {
                         variants={text}
                         className='text-blue-900'>
                     </motion.div>
-                </motion.div>
+                </motion.div> */}
 
             </div>
         );

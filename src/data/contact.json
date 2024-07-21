@@ -1,0 +1,30 @@
+{
+    "id": 1,
+    "Mobile": "+84-935-834-329",
+    "Email": "nguyentaianh0411@gmail.com",
+    "Location": {
+        "Address": "Thu Duc, Ho Chi Minh, Vietnam",
+        "Link": "https://goo.gl/maps/hejYF7B2HC7vXHMfA"
+    },
+    "Social": [
+        {
+            "id": 1,
+            "name": "Github",
+            "link": "https://github.com/t41n4",
+            "icon": "fab fa-github"
+        },
+        {
+            "id": 2,
+            "name": "Linkedin",
+            "link": "https://www.linkedin.com/in/nganhtai0411/",
+            "icon": "fab fa-linkedin"
+        },
+       
+        {
+            "id": 4,
+            "name": "Facebook",
+            "link": "https://www.facebook.com/Tai.9029/",
+            "icon": "fab fa-facebook"
+        }
+    ]
+}

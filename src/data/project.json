@@ -1,0 +1,47 @@
+[
+  {
+      "id": 1,
+      "Name": "F4Koin",
+      "Year": "2022",
+      "Scope": "Course",
+      "Type": "Corporate",
+      "Reference": "https://f4koin.n4t41.id.vn/",
+      "Role": "Backend"
+  },
+  {
+      "id": 2,
+      "Name": "Lottery Game",
+      "Year": "2023",
+      "Scope": "Course",
+      "Type": "Corporate",
+      "Reference": "https://lottery.dacn.site/",
+      "Role": "FrontEnd"
+  },
+  {
+      "id": 3,
+      "Name": "N4T41's Portfolio",
+      "Year": "2023",
+      "Scope": "Portfolio",
+      "Type": "Solo",
+      "Reference": "https://t41n4.github.io",
+      "Role": "Solo"
+  },
+  {
+      "id": 4,
+      "Name": "RSA Transfer",
+      "Year": "2022",
+      "Scope": "Comission",
+      "Type": "Solo",
+      "Reference": "https://github.com/t41n4/file-transfer-rsa.git",
+      "Role": "Solo"
+  },
+  {
+      "id": 5,
+      "Name": "EAE",
+      "Year": "2022",
+      "Scope": "Contest",
+      "Type": "Corporate",
+      "Reference": "https://eae.n4t41.id.vn",
+      "Role": "Backend"
+  }
+]

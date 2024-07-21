@@ -14,6 +14,10 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-fontawesome')({
+      version: 6
+    })
+  ],
 }
 
