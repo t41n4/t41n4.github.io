@@ -7,7 +7,7 @@ import project from './project.json'
 import links from './links.json'
 import { avatar } from "../assets";
 import staticLayout from "./static-layout.json";
-import resume from './../../public/resume.pdf'
+import resume from '/resume.pdf'
 
 // import social from './social.json'
 
