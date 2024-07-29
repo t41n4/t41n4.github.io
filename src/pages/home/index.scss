@@ -21,10 +21,6 @@ img {
   }
 }
 
-/*
-Pseudoelements only show if the image fails to load
-This means we can use them to show a nice overlay with the alt text inside
-*/
 img::after {
   content: "\1f517"" Broken Image of " attr(alt);
   display: block;

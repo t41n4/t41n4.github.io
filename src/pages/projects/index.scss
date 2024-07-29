@@ -9,7 +9,7 @@
     @apply flex items-end flex-col gap-y-[15px] mt-[50px];
 
     .project-item {
-      @apply flex flex-col md:flex-row-reverse md:items-baseline gap-x-2 font-thin;
+      @apply flex flex-col lg:flex-row-reverse lg:items-baseline gap-x-2 font-thin;
 
       .name {
         @apply text-4xl sm:text-6xl;

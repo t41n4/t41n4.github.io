@@ -28,13 +28,11 @@ const Projects = () => {
                   {item.Name}
                 </div>
                 <div className='description'>
-                  {item.Year} / {item.Scope} / {item.Type}
+                  {item.Year} / {item.Role} / {item.Type}
                 </div>
               </a>
-            ))
+            )).reverse()
           }
-
-
         </div>
       </div>
     </section>
