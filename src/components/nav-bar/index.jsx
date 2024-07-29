@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { links } from '../../data'
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import { useLocation } from 'react-router-dom'
-
+import { Link, useLocation } from 'react-router-dom';
+import { links } from '../../data';
 const NavBar = () => {
     const currentLocation = useLocation();
     const [Activate, setActivate] = useState('home')
@@ -17,13 +16,13 @@ const NavBar = () => {
                 {
                     links.map((item) =>
                     (<li key={item.id}>
-                        <div className='_text cursor-pointer'
+                        <Link to={item.path} className='cursor-pointer font-normal  '
                             onClick={() => {
-                                navigate(item.path);
+                                // navigate(item.path);
                                 setActivate(item.id)
                             }}>
                             {Activate === item.id ? "------" : item.title}
-                        </div>
+                        </Link>
                     </li>)
                     )
                 }

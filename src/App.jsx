@@ -1,11 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
-import { Route, Routes, useLocation } from "react-router-dom"
-import { Home, Info, Projects, Skill } from "./pages"
+import { useEffect, useState } from "react"
+import { useLocation } from "react-router-dom"
 import NavBar from "./components/nav-bar"
-import { useWindowSize } from "./components/hooks"
 import ThemeToggle from "./components/theme-toggle"
 import { circleAnimation } from "./components/transition-animation/TransitionAnimation"
+
+import { Outlet } from "react-router-dom"
+
 
 const App = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const App = () => {
   return (
     <>
       <link rel="icon" href="/public/T.svg" />
+
       <div id="page-body">
         <motion.div
           initial={circleAnimation.initial}
@@ -66,14 +68,10 @@ const App = () => {
             </nav>
           </header>
 
+
           <div className="content_inner relative ">
             <AnimatePresence mode="wait">
-              <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Info />} />
-                <Route path="/skill" element={<Skill />} />
-              </Routes>
+              <Outlet />
             </AnimatePresence>
           </div>
         </main>

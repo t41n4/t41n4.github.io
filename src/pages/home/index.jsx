@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
-import React, { useState, useEffect } from 'react'
-import { introduction, resume } from '../../data'
+import React, { useState } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+import { avatar } from "../../assets"
 import { useUniqueKey } from '../../components/hooks'
 import { pageAnimation } from "../../components/transition-animation/TransitionAnimation"
-import { avatar } from "../../assets"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { introduction, resume } from '../../data'
 import './index.scss'
 
 function Home() {

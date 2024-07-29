@@ -1,15 +1,15 @@
-import clsx from 'clsx'
-import React, { useState } from 'react'
+import clsx from 'clsx';
+import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css'
-import { avatar } from "../../assets"
-import { contact } from '../../data'
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { avatar } from "../../assets";
+import { contact } from '../../data';
 
 function Info() {
   const [loading, setLoading] = useState(true);
   return (
     <div
-      className='page_content info fixed right-10 bottom-10 gap-10 text-[14px] text-base divide-y-2 divide-gray-300 dark:divide-gray-700 dark:text-gray-300   rounded-lg px-10 shadow-lg '
+      className='page_content info fixed right-10 bottom-10 gap-10 text-[14px] text-base md:divide-y-2 divide-gray-300 md:dark:divide-gray-700 dark:text-gray-300   rounded-lg px-10 shadow-lg '
     >
 
       <span className='invert dark:invert-0 flex w-full justify-end items-center pb-5'>
