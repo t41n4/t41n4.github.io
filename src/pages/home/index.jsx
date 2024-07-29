@@ -26,7 +26,7 @@ function Home() {
                         // loading ? (
                         //     <div className='h-[200px] w-[200px] bg-gray-300 rounded-[25%] animate-pulse' />
                         // ) : (
-                        < LazyLoadImage
+                        <LazyLoadImage
                             effect="blur"
                             width={200}
                             height={200}
@@ -43,13 +43,12 @@ function Home() {
                         />
                         // )
                     }
-
                 </span>
                 {
                     introduction.map((item) => (
                         item.includes('Resume') ?
                             <a href={resume} key={useUniqueKey(5)}>
-                                Resume <i className="fas fa-file-arrow-down"/>
+                                Resume <i className="fas fa-file-arrow-down" />
                             </a>
                             :
                             <p key={useUniqueKey(5)}>{item}</p>

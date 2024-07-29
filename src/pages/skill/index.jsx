@@ -70,15 +70,4 @@ function Skill() {
   )
 }
 
-// function SkillGridLayout() {
-
-
-//   return (
-
-//   );
-// }
-
-// export default SkillGridLayout;
-
-
 export default Skill
