@@ -6,14 +6,19 @@ const prefersTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ?
 const ThemeToggle = () => {
 
     useEffect(() => {
-        // Add listener to update styles
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => handleThemeChange(e.matches ? 'dark' : 'light'));
-        // Remove listener
+        localStorage.setItem('theme', prefersTheme);
+        window
+            .matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', e => handleThemeChange(e.matches ? 'dark' : 'light'));
         return () => {
-            window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
-            });
+            window
+                .matchMedia('(prefers-color-scheme: dark)')
+                .removeEventListener('change', () => {
+                });
         }
     }, []);
+
+    const [theme, setTheme] = useState(prefersTheme);
 
     const handleThemeChange = (newTheme) => {
         const currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
@@ -27,7 +32,7 @@ const ThemeToggle = () => {
             <div className="dark">
                 <input
                     type="checkbox"
-                    checked={prefersTheme === 'dark'}
+                    checked={theme === 'dark'}
                     onChange={() => handleThemeChange('dark')}
                 />
                 <div className="_text">Dark</div>
@@ -36,7 +41,7 @@ const ThemeToggle = () => {
             <div className="light">
                 <input
                     type="checkbox"
-                    checked={prefersTheme === 'light'}
+                    checked={theme === 'light'}
                     onChange={() => handleThemeChange('light')}
                 />
                 <div className="_text">Light</div>
