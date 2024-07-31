@@ -9,10 +9,10 @@ function Info() {
   const [loading, setLoading] = useState(true);
   return (
     <div
-      className='page_content info fixed right-10 bottom-10 gap-10 text-[14px] text-base md:divide-y-2 divide-gray-300 md:dark:divide-gray-700 dark:text-gray-300   rounded-lg px-10 shadow-lg '
+      className='page_content info fixed right-10 bottom-10 gap-10 text-[14px] text-base md:divide-y-2 divide-gray-300 md:dark:divide-gray-700 dark:text-gray-300   rounded-lg px-10 '
     >
 
-      <span className='invert dark:invert-0 flex w-full justify-end items-center pb-5'>
+      <span className='dark:invert-0 invert flex w-full justify-end items-center pb-5'>
         <LazyLoadImage
           effect="blur"
           width={200}

@@ -6,10 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  @layer responsive {}
-}
-
 @layer base {
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -40,21 +36,15 @@
   overflow: scroll;
   line-height: 1.5;
   font-weight: 300;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --dark-background: #242424;
-  --light-background: #e6e6e6;
 }
 
 body {
-  background-color: #e6e6e6;
-  color: #e6e6e6;
-  @apply transition-colors;
+  @apply bg-light-background dark:bg-dark-background text-dark-text transition-colors;
 }
 
 a {
@@ -90,38 +80,26 @@ h1 {
   top: calc((100vh - max(40vw, 70vh)) / 2);
   opacity: 0.9;
   display: none;
-  @apply bg-[--dark-background] dark:bg-[--light-background] rounded-[50%] xl:block;
+  @apply bg-dark-background dark:bg-light-background rounded-[50%] xl:block;
 }
 
 .frame-mask {
   @apply z-30 fixed top-0 left-0 h-full w-full pointer-events-none;
 
   .top {
-    @apply w-full h-7 top-0 left-0 absolute opacity-90 bg-[--light-background] dark:bg-[--dark-background];
+    @apply w-full h-7 top-0 left-0 absolute opacity-90 bg-light-background dark:bg-dark-background;
   }
 
   .bottom {
-    @apply w-full h-7 bottom-0 left-0 absolute opacity-90 bg-[--light-background] dark:bg-[--dark-background];
+    @apply w-full h-7 bottom-0 left-0 absolute opacity-90 bg-light-background dark:bg-dark-background;
   }
 
   .left {
-    @apply h-full w-7 top-0 left-0 absolute opacity-90 bg-[--light-background] dark:bg-[--dark-background];
+    @apply h-full w-7 top-0 left-0 absolute opacity-90 bg-light-background dark:bg-dark-background;
   }
 
   .right {
-    @apply h-full w-7 bottom-0 right-0 absolute opacity-90 bg-[--light-background] dark:bg-[--dark-background];
-  }
-}
-
-.theme {
-  @apply z-50 fixed left-[-2.75em] bottom-20 rotate-[-90deg] flex flex-row gap-x-4 mix-blend-exclusion;
-
-  .light {
-    @apply flex flex-row justify-center items-center gap-1;
-  }
-
-  .dark {
-    @apply flex flex-row justify-center items-center gap-1;
+    @apply h-full w-7 bottom-0 right-0 absolute opacity-90 bg-light-background dark:bg-dark-background;
   }
 }
 
@@ -166,5 +144,5 @@ h1 {
 }
 
 ._error {
-  @apply z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black;
+  @apply z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center;
 }

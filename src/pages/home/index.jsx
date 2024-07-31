@@ -21,7 +21,7 @@ function Home() {
             className='introduction-section'>
 
             <div className='flex flex-col space-y-2'>
-                <span className='invert dark:invert-0 pb-2'>
+                <span className='dark:invert-0 invert pb-2'>
                     {
                         // loading ? (
                         //     <div className='h-[200px] w-[200px] bg-gray-300 rounded-[25%] animate-pulse' />

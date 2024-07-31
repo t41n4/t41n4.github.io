@@ -27,7 +27,15 @@ export default {
         clashdisplay: "ClashDisplay-Variable",
         tanker: "Tanker-Regular",
         nippo: 'Nippo-Variable',
-      }
+      },
+      colors: {
+        'dark-background': '#242424',
+        'dark-text': '#e6e6e6',
+        'light-background': '#e6e6e6',
+        'light-text': '#242424',
+        'dark-frame': '#e6e6e6',
+        'light-frame': '#242424',
+      },
     },
   },
   plugins: [

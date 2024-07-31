@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as ReactDOMClient from "react-dom/client"
 import { RouterProvider, createBrowserRouter, useRouteError } from "react-router-dom"
 import App from './App.jsx'
@@ -7,13 +7,6 @@ import ThemeToggle from "./components/theme-toggle"
 import { circleAnimation } from "./components/transition-animation/TransitionAnimation"
 import './index.scss'
 import { Home, Info, Projects, Skill } from "./pages"
-
-
-window.localStorage.setItem("theme", "light");
-document.body.classList.add("dark:bg-[--dark-background]");
-
-// const rootElement = document.getElementById("root");
-// const root = ReactDOMClient.createRoot(rootElement);
 
 const router = createBrowserRouter([
   {

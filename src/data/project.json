@@ -61,5 +61,14 @@
         "Type": "Corporate",
         "Reference": "https://github.com/t41n4/sentinel-platform.git",
         "Role": "Backend"
+    },
+    {
+        "id": 8,
+        "Name": "MBTI Website",
+        "Year": "2024",
+        "Scope": "Bussiness Project",
+        "Type": "Solo",
+        "Reference": "https://mbti-project-liard.vercel.app/",
+        "Role": "Frontend"
     }
 ]

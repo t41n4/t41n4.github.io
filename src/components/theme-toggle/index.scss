@@ -1,0 +1,16 @@
+.theme {
+    @apply z-50 fixed left-[-2.75em] bottom-[6.25rem] rotate-[-90deg] flex flex-row gap-x-4 mix-blend-exclusion;
+  
+    .light {
+      @apply flex flex-row justify-center items-center gap-1;
+    }
+  
+    .dark {
+      @apply flex flex-row justify-center items-center gap-1;
+    }
+  
+    // .os {
+    //   @apply flex flex-row justify-center items-center gap-1;
+    // }
+  }
+  
