@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Laravel",
+        "icon": "devicon-laravel-original",
+        "activate": true
+    },
+    {
+        "id": 2,
+        "name": "Typescript",
+        "icon": "devicon-typescript-plain",
+        "activate": true
+    },
+    {
+        "id": 3,
+        "name": "NestJS",
+        "icon": "devicon-nestjs-original",
+        "activate": true
+    },
+    {
+        "id": 4,
+        "name": "NextJS",
+        "icon": "devicon-nextjs-plain",
+        "activate": true
+    },
+    {
+        "id": 5,
+        "name": "Rust",
+        "icon": "devicon-rust-plain",
+        "activate": true
+    },
+    {
+        "id": 6,
+        "name": "C",
+        "icon": "devicon-c-plain",
+        "activate": true
+    },
+    {
+        "id": 7,
+        "name": "TailwindCSS",
+        "icon": "devicon-tailwindcss-plain",
+        "activate": true
+    },
+    {
+        "id": 8,
+        "name": "PHP",
+        "icon": "devicon-php-plain",
+        "activate": false
+    },
+    {
+        "id": 9,
+        "name": "MySQL",
+        "icon": "devicon-mysql-plain",
+        "activate": false
+    },
+    {
+        "id": 10,
+        "name": "NodeJS",
+        "icon": "devicon-nodejs-plain",
+        "activate": false
+    },
+    {
+        "id": 11,
+        "name": "C++",
+        "icon": "devicon-cplusplus-plain",
+        "activate": false
+    },
+    {
+        "id": 12,
+        "name": ".NET",
+        "icon": "devicon-dot-net-plain",
+        "activate": false
+    },
+    {
+        "id": 13,
+        "name": "react",
+        "icon": "devicon-react-original",
+        "activate": true
+    },
+    {
+        "id": 14,
+        "name": "python",
+        "icon": "devicon-python-plain",
+        "activate": true
+    },
+    {
+        "id": 15,
+        "name": "html5",
+        "icon": "devicon-html5-plain",
+        "activate": false
+    },
+    {
+        "id": 16,
+        "name": "csharp",
+        "icon": "devicon-csharp-plain",
+        "activate": false
+    },
+    {
+        "id": 17,
+        "name": "Linux",
+        "icon": "devicon-linux-plain",
+        "activate": true
+    },
+    {
+        "id": 18,
+        "name": "Git",
+        "icon": "devicon-git-plain",
+        "activate": true
+    },
+    {
+        "id": 19,
+        "name": "figma",
+        "icon": "devicon-figma-plain",
+        "activate": true
+    },
+    {
+        "id": 20,
+        "name": "css3",
+        "icon": "devicon-css3-plain",
+        "activate": false
+    },
+    {
+        "id": 21,
+        "name": "Flutter",
+        "icon": "devicon-flutter-plain",
+        "activate": true
+    }
+]

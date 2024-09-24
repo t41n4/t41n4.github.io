@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "Name": "EAE",
+        "Year": "2022",
+        "Scope": "Contest",
+        "Type": "Corporate",
+        "Reference": "https://eae.n4t41.id.vn",
+        "Role": "Backend"
+    },
+    {
+        "id": 2,
+        "Name": "RSA Transfer",
+        "Year": "2022",
+        "Scope": "Comission",
+        "Type": "Solo",
+        "Reference": "https://github.com/t41n4/file-transfer-rsa.git",
+        "Role": "FullStack"
+    },
+    {
+        "id": 3,
+        "Name": "N4T41's Portfolio",
+        "Year": "2023",
+        "Scope": "Portfolio",
+        "Type": "Solo",
+        "Reference": "https://t41n4.github.io",
+        "Role": "FullStack"
+    },
+    {
+        "id": 4,
+        "Name": "F4Koin",
+        "Year": "2022",
+        "Scope": "Course",
+        "Type": "Corporate",
+        "Reference": "https://f4koin.n4t41.id.vn/",
+        "Role": "Backend"
+    },
+    {
+        "id": 5,
+        "Name": "Lottery Game",
+        "Year": "2023",
+        "Scope": "Course",
+        "Type": "Corporate",
+        "Reference": "https://lottery.n4t41.id.vn/",
+        "Role": "FrontEnd"
+    },
+    {
+        "id": 6,
+        "Name": "Web3 Streaming Web",
+        "Year": "2023",
+        "Scope": "Course",
+        "Type": "Corporate",
+        "Reference": "https://github.com/t41n4/sentinel-platform.git",
+        "Role": "FrontEnd & Operator"
+    },
+    {
+        "id": 7,
+        "Name": "Sentinel Platform",
+        "Year": "2024",
+        "Scope": "Course",
+        "Type": "Corporate",
+        "Reference": "https://github.com/t41n4/sentinel-platform.git",
+        "Role": "Backend"
+    },
+    {
+        "id": 8,
+        "Name": "MBTI Website",
+        "Year": "2024",
+        "Scope": "Bussiness Project",
+        "Type": "Solo",
+        "Reference": "https://mbti-project-liard.vercel.app/",
+        "Role": "Frontend"
+    }
+]
