@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
 import NavBar from "./components/nav-bar"
 import ThemeToggle from "./components/theme-toggle"
 import { circleAnimation } from "./components/transition-animation/TransitionAnimation"
@@ -9,7 +8,6 @@ import { Outlet } from "react-router-dom"
 
 
 const App = () => {
-  const location = useLocation();
   const [themBoxes, SetThemBoxes] = useState(0);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { techStack, staticLayout } from '../../data';
 import '/node_modules/react-grid-layout/css/styles.css';
 import '/node_modules/react-resizable/css/styles.css';
@@ -9,15 +9,7 @@ const ResponsiveReactGridLayout = WidthProvider(Responsive);
 function Skill() {
   const [mounted, setMounted] = useState(false);
   const [layouts, setLayouts] = useState(
-    {
-      lg: techStack.map((item, index) => ({
-        i: index.toString(),
-        x: (index * 1) % 8,
-        y: Math.floor(index / 8),
-        w: 1,
-        h: 1,
-      })),
-    }
+    staticLayout
   );
 
   useEffect(() => {
@@ -25,7 +17,6 @@ function Skill() {
   }, []);
 
   const onLayoutChange = (layout, layouts) => {
-    console.log("🚩 ~ file: index.jsx:27 ~ layouts:", layouts);
     setLayouts({ ...layouts });
   };
 
@@ -51,7 +42,7 @@ function Skill() {
           cols={{ lg: 12, md: 10, sm: 6, xs: 8, xxs: 8 }}
           breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
           rowHeight={75}
-          layouts={staticLayout}
+          layouts={layouts}
           containerPadding={[0, 0]}
           measureBeforeMount={false}
           useCSSTransforms={mounted}
@@ -60,7 +51,6 @@ function Skill() {
           isDroppable={true}
           isResizable={false}
           onLayoutChange={onLayoutChange}
-
         >
           {generateDOM()}
         </ResponsiveReactGridLayout>
